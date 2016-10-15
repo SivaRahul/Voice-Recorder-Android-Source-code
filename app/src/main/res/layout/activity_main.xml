@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rec.MainActivity" >
+
+    <!-- <ImageButton
+         android:id="@+id/stop"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/play"
+         android:layout_toRightOf="@+id/tv1"
+         android:background="#000000"
+         android:src="@drawable/pause" /> -->
+
+    <ImageButton
+        android:id="@+id/startrec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:layout_toLeftOf="@+id/tv1"
+        android:background="#000000"
+        android:src="@drawable/micg" />
+
+    <!-- <ImageButton
+         android:id="@+id/play"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/startrec"
+         android:layout_below="@+id/startrec"
+         android:layout_marginTop="88dp"
+         android:background="#000000"
+         android:src="@drawable/play" />-->
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/hello_world" />
+
+    <ImageButton
+        android:id="@+id/stoprec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#000000"
+        android:src="@drawable/micy"
+        android:layout_below="@+id/tv1"
+        android:layout_toEndOf="@+id/tv1" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:background="#ffffff"
+        android:id="@+id/listView"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
